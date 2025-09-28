@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClubDeportivoApp">
+        <activity
+            android:name=".BusquedaSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusquedaNoSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaNoSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GestionNoSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GestionSociosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaVencimientosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaMorososActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarnetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagoActividadDiariaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagoCuotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscripcionNoSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscripcionSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

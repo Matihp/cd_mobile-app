@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ClubDeportivoApp</string>
+    <string name="iniciarsesion_button_text">Iniciar Sesión</string>
+</resources>
