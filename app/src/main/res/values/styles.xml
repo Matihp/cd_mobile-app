@@ -35,4 +35,12 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="ResultLbl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
