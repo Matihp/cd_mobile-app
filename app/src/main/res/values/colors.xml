@@ -2,14 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="app_background_yellow">#FFEAA4</color>
     <color name="background_yellow">#FFF4CE</color>
-    <color name="card_green">#D1F2E1</color>
-    <color name="card_yellow">#FFEFC9</color>
+
     <color name="text_white">#FFFFFFFF</color>
     <color name="text_dark">#2C2C2C</color>
     <color name="text_gray">#666666</color>
     <color name="top_gray">#F3EDF7</color>
+    <color name="input_locked_gray">#EAEAEA</color>
+    <color name="gradient_white_transparent">#D9FFFFFF</color>
+
+    <color name="card_green">#D1F2E1</color>
+    <color name="card_yellow">#FFEFC9</color>
+    <color name="card_red">#FADBD8</color>
+    <color name="card_blue">#D6EAF8</color>
 
     <color name="btn_beige">#F5E8C7</color>
     <color name="btn_blue">#AEE2FF</color>

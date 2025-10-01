@@ -24,7 +24,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_arrow_back" />
+                android:src="@drawable/atras" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,12 +40,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/sheet_payment_gradient"
+            android:background="@drawable/linearl_background"
             android:orientation="vertical"
             android:padding="24dp">
 
             <TextView
-                style="@style/FormLabel"
+                style="@style/FormLbl"
                 android:text="DNI" />
 
             <EditText
@@ -58,7 +58,7 @@
                 android:text="30495724" />
 
             <TextView
-                style="@style/FormLabel"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
                 android:text="Métodos de pago" />
 
@@ -68,12 +68,12 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="4dp"
                 android:background="@drawable/spinner_background"
-                android:entries="@array/payment_methods"
+                android:entries="@array/metodos_pago"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp" />
 
             <TextView
-                style="@style/FormLabel"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
                 android:text="Cantidad de cuotas" />
 
@@ -83,12 +83,12 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="4dp"
                 android:background="@drawable/spinner_background"
-                android:entries="@array/installments"
+                android:entries="@array/cuotas_tarjeta"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp" />
 
             <TextView
-                style="@style/FormLabel"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
                 android:text="Valor de la cuota" />
 
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/input_value_background"
+                android:background="@drawable/input_locked_background"
                 android:enabled="false"
                 android:gravity="center"
                 android:inputType="numberDecimal"
@@ -104,17 +104,12 @@
                 android:text="999"
                 android:textColor="@color/text_gray" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/button_pay_background"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/button_yellow_background"
                 android:paddingStart="64dp"
                 android:paddingEnd="64dp"
                 android:text="Pagar"

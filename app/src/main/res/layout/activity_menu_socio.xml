@@ -215,7 +215,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="@color/btn_red"
+                app:cardBackgroundColor="@color/btn_icon_gray"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
 

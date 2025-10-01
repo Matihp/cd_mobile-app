@@ -45,11 +45,8 @@
             android:padding="24dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                style="@style/FormLbl"
+                android:text="Nombre" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -60,12 +57,9 @@
                 android:text="Pedro" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Apellido"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                style="@style/FormLbl"
+                android:text="Apellido" android:layout_marginTop="16dp"/>
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -76,12 +70,10 @@
                 android:text="Lopez" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                style="@style/FormLbl"
                 android:text="DNI"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                android:layout_marginTop="16dp"
+                 />
 
             <EditText
                 android:layout_width="match_parent"
@@ -93,12 +85,9 @@
                 android:text="30495724" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
-                android:text="Email"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                android:text="Email" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -110,12 +99,10 @@
                 android:text="ejemplo@gmail.com" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
                 android:text="Nro. de celular"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                />
 
             <EditText
                 android:layout_width="match_parent"
@@ -127,12 +114,10 @@
                 android:text="1149230482" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FormLbl"
                 android:layout_marginTop="16dp"
                 android:text="Provincia"
-                android:textColor="@color/text_gray"
-                android:textSize="14sp" />
+                 />
 
             <EditText
                 android:layout_width="match_parent"

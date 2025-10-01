@@ -43,4 +43,20 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="FormLbl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CarnetLbl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
