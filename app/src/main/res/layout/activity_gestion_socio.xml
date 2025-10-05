@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/app_background_yellow"
     android:fillViewport="true"
-    tools:context=".GestionNoSociosActivity">
+    tools:context=".GestionSociosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:padding="16dp">
 
             <ImageButton
-                android:id="@+id/backButton"
+                android:id="@+id/backBtn"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -33,7 +33,7 @@
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:text="No Socio"
+                android:text="Socio"
                 android:textColor="@color/text_dark"
                 android:textSize="28sp" />
 
@@ -75,55 +75,96 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/black" />
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginTop="16dp"
-                app:cardBackgroundColor="@color/btn_beige"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-
-                    <ImageView
-                        style="@style/MenuButton.Icon"
-                        android:src="@drawable/registrar" />
-
-                    <TextView
-                        style="@style/MenuButton.Text"
-                        android:text="Registrar No Socio" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginTop="16dp"
-                app:cardBackgroundColor="@color/btn_blue"
-                app:cardCornerRadius="16dp"  app:cardElevation="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
                 >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="16dp">>
+                <androidx.cardview.widget.CardView
+                    style="@style/MenuButton.Card"
+                    app:cardBackgroundColor="@color/btn_beige"
+                    app:cardCornerRadius="16dp"  app:cardElevation="0dp"
+                    >
 
-                    <ImageView
-                        style="@style/MenuButton.Icon"
-                        android:src="@drawable/buscar" />
+                    <LinearLayout style="@style/MenuButton.LinearLayout">
 
-                    <TextView
-                        style="@style/MenuButton.Text"
-                        android:text="Buscar Socio" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            style="@style/MenuButton.Icon"
+                            android:src="@drawable/registrar" />
+
+                        <TextView
+                            style="@style/MenuButton.Text"
+                            android:text="Registrar\nSocio" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View style="@style/MenuButton.Spacer" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/MenuButton.Card"
+                    app:cardBackgroundColor="@color/btn_blue"
+                    app:cardCornerRadius="16dp"  app:cardElevation="0dp"
+                    >
+
+                    <LinearLayout style="@style/MenuButton.LinearLayout">
+
+                        <ImageView
+                            style="@style/MenuButton.Icon"
+                            android:src="@drawable/buscar" />
+
+                        <TextView
+                            style="@style/MenuButton.Text"
+                            android:text="Buscar\nSocio" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/MenuButton.Card"
+                    app:cardBackgroundColor="@color/btn_pink"
+                    app:cardCornerRadius="16dp"  app:cardElevation="0dp"
+                    >
+
+                    <LinearLayout style="@style/MenuButton.LinearLayout">
+
+                        <ImageView
+                            style="@style/MenuButton.Icon"
+                            android:src="@drawable/pago" />
+
+                        <TextView
+                            style="@style/MenuButton.Text"
+                            android:text="Pago\nCuota" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View style="@style/MenuButton.Spacer" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/MenuButton.Card"
+                    app:cardBackgroundColor="@color/btn_light_blue"
+                    app:cardCornerRadius="16dp"  app:cardElevation="0dp"
+                    >
+
+                    <LinearLayout style="@style/MenuButton.LinearLayout">
+
+                        <ImageView
+                            style="@style/MenuButton.Icon"
+                            android:src="@drawable/carnet" />
+
+                        <TextView
+                            style="@style/MenuButton.Text"
+                            android:text="Emitir\nCarnet" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -141,11 +182,11 @@
 
                         <ImageView
                             style="@style/MenuButton.Icon"
-                            android:src="@drawable/pago" />
+                            android:src="@drawable/listar" />
 
                         <TextView
                             style="@style/MenuButton.Text"
-                            android:text="Inscribir\nActividad" />
+                            android:text="Listar\nMorosos" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -165,7 +206,7 @@
 
                         <TextView
                             style="@style/MenuButton.Text"
-                            android:text="Pagar\nActividad" />
+                            android:text="Vencimientos\nDiarios" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
