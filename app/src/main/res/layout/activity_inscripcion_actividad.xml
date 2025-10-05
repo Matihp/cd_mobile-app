@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background_yellow"
+    android:fillViewport="true"
+    tools:context=".InscripcionActividadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/atras" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Inscribir Actividad"
+                android:textColor="@color/text_dark"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/linearl_background"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                style="@style/FormLbl"
+                android:text="DNI" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_input_border"
+                android:inputType="number"
+                android:padding="12dp"
+                android:text="30495724" />
+
+            <TextView
+                style="@style/FormLbl"
+                android:layout_marginTop="16dp"
+                android:text="Actividad" />
+
+            <Spinner
+                android:id="@+id/paymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/actividades"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                app:backgroundTint="@color/btn_white"
+                app:cornerRadius="6dp"
+                app:elevation="2dp"
+                android:paddingStart="64dp"
+                android:paddingEnd="64dp"
+                android:text="Pagar"
+                android:textAllCaps="false"
+                android:textColor="@color/text_dark"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
