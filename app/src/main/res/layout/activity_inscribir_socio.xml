@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/app_background_yellow"
     android:fillViewport="true"
     tools:context=".InscripcionSocioActivity">
@@ -20,7 +21,7 @@
             android:padding="16dp">
 
             <ImageButton
-                android:id="@+id/backButton"
+                android:id="@+id/backBtn"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -128,38 +129,35 @@
                 android:padding="12dp"
                 android:text="Misiones" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:layout_width="56dp"
-                    android:layout_height="56dp"
+                    android:layout_height="48dp"
                     android:background="@drawable/button_icon_background"
-                    android:src="@drawable/limpiar"
+                    android:elevation="2dp"
                     android:scaleType="center"
-                    android:elevation="4dp"/>
+                    android:src="@drawable/limpiar" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="56dp"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
-                    android:background="@drawable/button_yellow_background"
+                    app:backgroundTint="@color/btn_yellow"
+                    app:cornerRadius="6dp"
+                    app:elevation="2dp"
                     android:text="Registrar"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_dark"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:elevation="4dp"/>
+                    android:elevation="2dp"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

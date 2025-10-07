@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -13,18 +14,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingStart="24dp"
-        android:paddingEnd="24dp"
-        >
+        android:paddingEnd="24dp">
 
         <ImageView
-            android:id="@+id/logoImageView"
             android:layout_width="wrap_content"
             android:layout_height="364dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -40,7 +38,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/emailEditText"
+            android:id="@+id/emailLbl"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="4dp"
@@ -58,7 +56,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/passwordLbl"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="4dp"
@@ -68,12 +66,16 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:text="@string/iniciarsesion_button_text" />
+            android:text="@string/iniciarsesion_button_text"
+            android:textColor="@color/text_dark"
+            app:backgroundTint="@color/btn_white"
+            app:cornerRadius="6dp"
+            app:elevation="2dp" />
 
     </LinearLayout>
 

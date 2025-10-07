@@ -27,7 +27,7 @@
             >
 
             <ImageButton
-                android:id="@+id/menuButton"
+                android:id="@+id/menuBtn"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
@@ -41,7 +41,7 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@+id/profileButton"
+                android:id="@+id/profileBtn"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="start|top"
@@ -109,8 +109,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
-                        android:paddingTop="16dp"
-                        >
+                        android:paddingTop="16dp">
 
                         <TextView
                             android:layout_width="wrap_content"
