@@ -53,7 +53,7 @@
             android:id="@+id/arrowImageView"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/atras"
+            android:src="@drawable/flecha"
             app:tint="@color/text_gray" />
 
     </LinearLayout>
