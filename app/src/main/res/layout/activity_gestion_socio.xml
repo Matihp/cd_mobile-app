@@ -55,9 +55,9 @@
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/menu_gestion" />
+                tools:srcCompat="@drawable/logo_socios" />
         </LinearLayout>
 
         <LinearLayout
