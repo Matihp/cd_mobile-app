@@ -6,7 +6,6 @@
         <item>Tarjeta de débito</item>
         <item>Tarjeta de crédito</item>
         <item>Efectivo</item>
-        <item>Transferencia</item>
     </string-array>
 
     <string-array name="cuotas_tarjeta">
@@ -14,5 +13,13 @@
         <item>3</item>
         <item>6</item>
         <item>12</item>
+    </string-array>
+
+    <string-array name="actividades">
+        <item>Basquet</item>
+        <item>Karate</item>
+        <item>Tenis</item>
+        <item>Pilates</item>
+        <item>Voley</item>
     </string-array>
 </resources>
