@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/app_background_yellow"
     android:orientation="vertical"
-    tools:context=".ListaVencimientosActivity">
+    tools:context=".activities.ListaVencimientosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

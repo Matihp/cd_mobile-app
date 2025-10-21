@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoApp">
         <activity
-            android:name=".PresentacionActivity"
+            android:name=".activities.PresentacionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,52 +21,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InscripcionActividadActivity"
+            android:name=".activities.InscripcionActividadActivity"
             android:exported="false" />
         <activity
-            android:name=".BusquedaSociosActivity"
+            android:name=".activities.BusquedaSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".BusquedaNoSociosActivity"
+            android:name=".activities.BusquedaNoSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListaNoSociosActivity"
+            android:name=".activities.ListaNoSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListaSociosActivity"
+            android:name=".activities.ListaSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".GestionNoSociosActivity"
+            android:name=".activities.GestionNoSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".GestionSociosActivity"
+            android:name=".activities.GestionSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListaVencimientosActivity"
+            android:name=".activities.ListaVencimientosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListaMorososActivity"
+            android:name=".activities.ListaMorososActivity"
             android:exported="false" />
         <activity
-            android:name=".CarnetActivity"
+            android:name=".activities.CarnetActivity"
             android:exported="false" />
         <activity
-            android:name=".PagoActividadDiariaActivity"
+            android:name=".activities.PagoActividadDiariaActivity"
             android:exported="false" />
         <activity
-            android:name=".PagoCuotaActivity"
+            android:name=".activities.PagoCuotaActivity"
             android:exported="false" />
         <activity
-            android:name=".InscripcionNoSocioActivity"
+            android:name=".activities.InscripcionNoSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".InscripcionSocioActivity"
+            android:name=".activities.InscripcionSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuPrincipalActivity"
+            android:name=".activities.MenuPrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false"/>
     </application>
 

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/app_background_yellow"
     android:fillViewport="true"
-    tools:context=".PagoCuotaActivity">
+    tools:context=".activities.PagoCuotaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
