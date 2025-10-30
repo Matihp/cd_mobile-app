@@ -1,5 +1,7 @@
 package com.example.clubdeportivoapp.controllers
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.example.clubdeportivo.entities.Actividad
 import com.example.clubdeportivo.entities.NoSocio
 import com.example.clubdeportivo.entities.Socio
@@ -78,6 +80,7 @@ class ActividadController(private val actividadRepository: ActividadRepository,
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     fun paymentDailyActividad(nameActividad: String, dniNoSocio: String, amount: Double): Pair<Boolean, String> {
 
         val noSocio: NoSocio? = noSocioRepository.findNoSocioByDni(dniNoSocio)

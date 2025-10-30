@@ -2,7 +2,7 @@ package com.example.clubdeportivoapp.controllers
 
 import android.content.Context
 import com.example.clubdeportivo.entities.Usuario
-import com.example.clubdeportivo.repositories.UsuarioRepository
+import com.example.clubdeportivoapp.repositories.UsuarioRepository
 
 class LoginController(
     private val context: Context,

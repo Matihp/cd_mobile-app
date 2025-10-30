@@ -40,11 +40,11 @@ class CuotaController(private val cuotaRepository: CuotaRepository,
 
         val cuota = Cuota(
             idCuota = null,
-            amount = valueCuota,
-            payday = payday,
+            valueCuota = valueCuota,
+            payDay = payday,
             paymentMethod = paymentMethod,
             numberCuotas = numberCuotas,
-            state = true
+            state = true,
             expirationDate = expirationDate,
             nextExpirationDate = nextExpirationDate,
         )

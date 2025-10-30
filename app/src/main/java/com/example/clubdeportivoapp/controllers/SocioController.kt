@@ -2,12 +2,13 @@ package com.example.clubdeportivoapp.controllers
 
 import com.example.clubdeportivo.entities.Socio
 import com.example.clubdeportivo.entities.dtos.SocioExpirationDayDto
-import com.example.clubdeportivo.repositories.NoSocioRepository
-import com.example.clubdeportivo.repositories.SocioRepository
-import org.threeten.bp.LocalDate
+import com.example.clubdeportivoapp.repositories.NoSocioRepository
+import com.example.clubdeportivoapp.repositories.SocioRepository
+import java.time.LocalDate
 
 class SocioController(private val socioRepository: SocioRepository,
-                      private val noSocioRepository: NoSocioRepository) {
+                      private val noSocioRepository: NoSocioRepository
+) {
 
     fun enrollSocio(socio: Socio): Pair<Boolean, String> {
         if (socioRepository.existSocio(socio.dni)) {
@@ -31,14 +32,14 @@ class SocioController(private val socioRepository: SocioRepository,
 
     fun updateState(idSocio: Int?, newState: Boolean): Boolean {
         return socioRepository.updateState(idSocio, newState)
-    }    
+    }
 
-    fun getListSociosByExpiationDay(date: LocalDate): MutableList<SocioExpirationDayDto>{
+    fun getListSociosByExpiationDay(date: LocalDate): List<SocioExpirationDayDto> {
         return socioRepository.listSocioByExpirationDay(date)
     }
 
-    fun getListSociosMora(date: LocalDate): MutableList<SocioExpirationDayDto>{
+    // Lo mismo para la otra función
+    fun getListSociosMora(date: LocalDate): List<SocioExpirationDayDto> {
         return socioRepository.listSociosMora(date)
     }
-
 }

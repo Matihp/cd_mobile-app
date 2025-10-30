@@ -2,7 +2,7 @@ package com.example.clubdeportivoapp.controllers
 
 import com.example.clubdeportivo.entities.Usuario
 import com.example.clubdeportivo.entities.dtos.UsuarioDto
-import com.example.clubdeportivo.repositories.UsuarioRepository
+import com.example.clubdeportivoapp.repositories.UsuarioRepository
 
 class UsuarioController(private val usuarioRepository: UsuarioRepository) {
 
@@ -19,7 +19,7 @@ class UsuarioController(private val usuarioRepository: UsuarioRepository) {
             idUsuario = user.idUsuario,
             username = user.username,
             password = user.password,
-            rol = fk,
+            fkRol = fk,
             name = user.name,
             lastName = user.lastName,
             dni = user.dni,

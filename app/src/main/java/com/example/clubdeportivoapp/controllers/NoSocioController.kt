@@ -2,9 +2,9 @@ package com.example.clubdeportivoapp.controllers
 
 import com.example.clubdeportivo.entities.NoSocio
 import com.example.clubdeportivo.entities.dtos.NoSocioEnabledDto
-import com.example.clubdeportivo.repositories.NoSocioRepository
-import com.example.clubdeportivo.repositories.SocioRepository
-import org.threeten.bp.LocalDate
+import com.example.clubdeportivoapp.repositories.NoSocioRepository
+import com.example.clubdeportivoapp.repositories.SocioRepository
+import java.time.LocalDate
 
 class NoSocioController(private val noSocioRepository: NoSocioRepository,
                         private val socioRepository: SocioRepository
